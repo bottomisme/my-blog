@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myblog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="head">
+        <div class="resumeword">
+            <h4>我的前半生：</h4><br>
+            <p>本人出生在一个比较富裕的家庭，但无奈刚上学时家道中落，心疼自己。读书时，看了红楼才知自己身世与贾宝玉和雪芹
+                大叔的经历甚是相似，感觉自己会不会也和他们一样，身负异才。便也一样开始了写作，起初自认为文采斐然，拿给我的
+                语文老师看，便说，老师，这是俺写的文章。你说中不中啊？然后就没有然后了。现在有两个梦想一个是，成为一名导演，
+                写剧本，拍部电影，票房大卖。哈哈！还有一个是成为一名weber。因为我的一身的艺术细菌已经饥渴难耐了。
+              </p>
+            <p>开了这个blog 的目的主要是分享经验。和前端路上的点点坎坷。</p>
+
+        </div>
+        <div class="photo">
+            <img src="Birds_in_forest_Mr.%20Sorrow%20.jpg">
+        </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="notes">
+                <h3>时间:2016.7.17</h3>
+                <h4>图片在文本中的定位：</h4>
+                <p>做这个blog的第二天，遇到的问题便是，右边这个图片无法居中的问题。我去，搞了我大半天。最终查看boostrap的代码才发现，img
+                 是行级元素，要用margin必须是块级元素，需要用display：block。将他变为块级元素。然后定位才生效。真心疼自己搞了大半天。</p>
+
+            </div>
+            <div class="notes">
+                <h3>时间：2016.7.18
+                <h4>div的定位新理解：</h4>
+                <p>
+                    关于盒子：对于已经给定宽度的盒子，增加padding会增大盒子的大小。增加margin如果比较小，很大可能会增加盒子宽度，而是下几个盒子因为宽度不够而排到
+                    下一列，造成布局混乱。
+                </p>
+                <p>解决方法；可以改变盒子 大小，不推荐，麻烦。推荐在盒子内增加一个新div，给他增加margin或padding来布局文本等内容。还有一个比较新的方法，最方便，
+                用css3的box-sizing:border-box:来讲盒子变成内部伸缩。这个最简便。但要考虑兼容问题。还有就是display：table-cell取代float：且整行等高。很有用，但必须舍弃IE6,7。</p>
+            </div>
+            <div class="notes">
+                <h3>时间：2016.7.19</h3>
+                <h4>导航栏的制作关键：</h4>
+                <p>在于display，li:hover的属性设置,和对li和ul  的position的定位，来确定二级或三级菜单的位置。</p>
+            </div>
+            <div class="notes">
+                <h3>时间：2016.7.23</h3>
+                <h4>bootstrap导航栏的制作关键：</h4>
+                <p>nav定义第一层。navbar navbar-default/inverse.或固定位置的navbar-fixed-top（添加body样式padding-top:60px）。在nav中还有role="navigation"。
+                    然后在nav标签中添加class=contianer(居中)/contianer-fluid（流动向左).在div class="contianer(居中)/contianer-fluid（流动向左)"填写具体的导航内容。</p>
+                <p>下拉菜单：ul《 li class="dropdown"》《a class="data-tollge" datatollge="dropdown"》《span class="caret"》《ul class="dropdownmenu"》lili</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="me">
+                <img src="湖北工业大学理学院陈旭1211122203.jpg">
+                  <ul>
+                      <li>昵称：陈嬷嬷</li>
+                      <li>性取向：不明</li>
+                      <li>自我认知：间歇性精神病，玲珑玻璃心</li>
+                  </ul>
+                <br><br> 
+                <h4>推荐的学习资料</h4><br>
+                <ul>
+                    <li><a href="#">《CSS设计指南》</a></li>
+                    <li><a href="#">《CSS禅意花园》</a></li>
+                    <li><a href="#">《JavaScript&nbspDOM编程艺术&nbsp第二版》</a></li>
+                    <li><a href="#">《html秘籍：the missing manual》</a></li>
+                    <li><a href="#">《web from design： filling in the blanks》</a> </li>
+                    <li><a>《精彩绝伦的css》</a></li>
+                    <li><a href="http://www.stylinwithcss.com">stylinwithcss</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="foot"><article></article></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="jquery-2.2.3.min.js"></script>
+</body>
+</html>
