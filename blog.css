@@ -1,0 +1,73 @@
+*{margin: 0;padding: 0;}
+body{background: url("激战2.jpg") no-repeat fixed; background-size:cover;}
+.container{
+    width:80%; margin: auto;
+}
+.head{border-radius: 8px;box-shadow: 0 3px 6px #868;height: 220px;margin: 10px;}
+div.container>div.head{background-color: white;filter: alpha(opacity=50);opacity: 0.6 ;}
+div.left>div.notes{background-color: white;filter: alpha(opacity=40);opacity: 0.6;}
+div.right>div.me{background-color: white;filter: alpha(opacity=40);opacity: 0.6;}
+.resumeword{
+    padding: 10px;width: 60%;float: left;box-sizing: border-box;
+}
+.resumeword p{
+    font-size: 15px;text-indent: 2em;text-align: justify;line-height: 150%; }
+.main{
+
+}
+.left{
+    float: left;width: 70%;
+}
+.right{
+    float: left;width: 30%;
+}
+.photo{
+    float: left;width: 40%;box-sizing: border-box;filter:alpha(opacity=60);opacity: 0.6;
+}
+.photo img{
+    display: block;width: 400px;height: 200px;margin: 10px auto;border-radius: 10px;
+}
+.notes{
+    box-shadow: #868 0px 3px 6px;margin: 10px ;height: auto;border-radius: 8px;padding: 20px;position: relative;padding-top: 40px;
+
+}
+
+.me{
+    border-radius: 8px;box-shadow:#868 0px 3px 6px;height:600px;margin: 10px;position:relative;padding: 20px;
+}
+.me img {
+    width:150px; height:150px;margin:10px auto;border-radius:50%;display: block;
+}
+.notes p{
+    font-size: 16px;line-height:150% ;
+}
+.notes h3{
+    display: block;position: absolute;top: 0;left: 0;right: 0;background-color: forestgreen;border-top-left-radius: 4px;
+    border-top-right-radius: 4px;text-align: center;line-height: 200%;
+}
+.notes h4+p::first-letter{
+    font-size:50px;float: left;
+line-height: 0.3;padding-top: 15px;
+}
+.me ul {
+    list-style: none;
+}
+.me ul li{
+    font-size: 15px;
+    line-height: 150%;
+    position: relative;
+}
+.me ul li a{
+    color: black;text-decoration: none;
+}
+.me ul li a:hover{
+    color: chartreuse;text-decoration: none;
+}
+.me li :before{
+    content: "";position: absolute;width: 10px;height: 10px;top:5px;left:-12px;border-radius: 5px 0 5px 0;
+    box-shadow: 1px 1px 2px #888;background-color: coral;
+}
+
+
+
+
